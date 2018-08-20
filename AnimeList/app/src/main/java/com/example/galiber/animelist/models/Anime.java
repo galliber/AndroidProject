@@ -11,6 +11,7 @@ public class Anime implements Serializable{
     public int seasons;
     public int eppisodeCount;
     public List<String> genres;
+    public String img;
 
     @Override
     public String toString(){

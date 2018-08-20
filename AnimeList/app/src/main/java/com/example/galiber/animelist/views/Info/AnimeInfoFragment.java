@@ -9,9 +9,11 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.galiber.animelist.R;
 import com.example.galiber.animelist.models.Anime;
 import com.google.firebase.firestore.DocumentSnapshot;
@@ -54,6 +56,9 @@ public class AnimeInfoFragment extends Fragment{
         seasons.setText("Seasons: "+mAnime.seasons);
         TextView eppisodeCount=view.findViewById(R.id.tv_eppisode_count);
         eppisodeCount.setText("Episodes: "+mAnime.eppisodeCount);
+        ImageView image=view.findViewById(R.id.iv_image);
+
+        Glide.with(getContext()).load(mAnime.img).into(image);
 
         mAddButton=view.findViewById(R.id.btn_add);
         mAddButton.setText("Add to My List");
