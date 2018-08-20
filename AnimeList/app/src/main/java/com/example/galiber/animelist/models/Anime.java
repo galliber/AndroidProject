@@ -39,36 +39,4 @@ public class Anime implements Serializable{
     public void setName(String name) {
         this.name = name;
     }
-
-    public String getReleaseDate() {
-        return releaseDate;
-    }
-
-    public void setReleaseDate(String releaseDate) {
-        this.releaseDate = releaseDate;
-    }
-
-    public int getSeasons() {
-        return seasons;
-    }
-
-    public void setSeasons(int seasons) {
-        this.seasons = seasons;
-    }
-
-    public int getEppisodeCount() {
-        return eppisodeCount;
-    }
-
-    public void setEppisodeCount(int eppisodeCount) {
-        this.eppisodeCount = eppisodeCount;
-    }
-
-    public List<String> getGenres() {
-        return genres;
-    }
-
-    public void setGenres(List<String> genres) {
-        this.genres = genres;
-    }
 }

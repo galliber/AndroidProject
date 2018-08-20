@@ -1,4 +1,4 @@
-package com.example.galiber.animelist.fragments;
+package com.example.galiber.animelist.views.AllList;
 
 import android.app.Fragment;
 import android.os.Bundle;
@@ -57,8 +57,8 @@ public class AllListFragment extends Fragment implements AdapterView.OnItemClick
         mAnimeNames.setAdapter(mAnimeNamesAdapter);
         mAnimeNames.setOnItemClickListener(this);
 
-        mAnimeNamesRepository = new FirebaseRepository<Anime>("allAnimes", Anime.class);
-
+//        mAnimeNamesRepository = new FirebaseRepository<Anime>("allAnimes", Anime.class);
+//
 //        mAnimeNamesRepository.getAll(animes->{
 //            for(Anime anime:animes){
 //                mAnimeNamesAdapter.add(anime.name);

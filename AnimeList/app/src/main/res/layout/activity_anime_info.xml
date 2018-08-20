@@ -4,11 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".views.AnimeInfoActivity">
+    tools:context=".views.Info.AnimeInfoActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
 
     <FrameLayout
+        android:layout_below="@id/tb_drawer"
         android:id="@+id/content2"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+</RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>
