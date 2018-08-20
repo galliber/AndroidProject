@@ -1,4 +1,4 @@
 ### AndroidProject
-#Anime List
+# Anime List
 
-##Creator: Denis Pavlov(galiber)
+## Creator: Denis Pavlov(galiber)
