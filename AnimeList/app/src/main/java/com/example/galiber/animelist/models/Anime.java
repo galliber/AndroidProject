@@ -5,6 +5,7 @@ import java.io.Serializable;
 import java.util.List;
 
 public class Anime implements Serializable{
+   public static final String DEF_IMG="https://firebasestorage.googleapis.com/v0/b/androidproject-9937a.appspot.com/o/def.jpg?alt=media&token=f8fcccc5-5d24-45ff-a754-2754a62775c7";
     private static final long serialVersionUID=1L;
     public String name;
     public String releaseDate;

@@ -20,6 +20,7 @@
             android:layout_toRightOf="@id/tv_name"
             android:id="@+id/et_name"
             android:layout_width="match_parent"
+            android:hint="Enter the name!"
             android:layout_height="40dp" />
 
         <TextView
@@ -35,6 +36,7 @@
             android:layout_toRightOf="@id/tv_release_date"
             android:layout_below="@id/et_name"
             android:layout_width="match_parent"
+            android:hint="Enter the release date!"
             android:layout_height="40dp" />
 
         <TextView
@@ -50,6 +52,7 @@
             android:layout_toRightOf="@id/tv_genres"
             android:layout_below="@id/et_release_date"
             android:layout_width="match_parent"
+            android:hint="genre, next, next..."
             android:layout_height="40dp" />
 
         <TextView
@@ -65,6 +68,7 @@
             android:layout_toRightOf="@id/tv_seasons"
             android:layout_below="@id/et_genres"
             android:layout_width="match_parent"
+            android:hint="Enter a number!"
             android:layout_height="40dp" />
 
         <TextView
@@ -72,15 +76,16 @@
             android:layout_below="@id/tv_seasons"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
-            android:text="release date: "
+            android:text="episodes: "
             android:textSize="20dp" />
 
         <EditText
             android:id="@+id/et_episodes"
-            android:layout_toRightOf="@id/tv_episodes"
-            android:layout_below="@id/et_seasons"
             android:layout_width="match_parent"
-            android:layout_height="40dp" />
+            android:layout_height="40dp"
+            android:layout_below="@id/et_seasons"
+            android:layout_toRightOf="@id/tv_episodes"
+            android:hint="Enter a number!" />
 
         <Button
             android:id="@+id/btn_add"

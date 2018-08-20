@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.example.galiber.animelist.R;
@@ -73,6 +74,7 @@ public class AnimeInfoFragment extends Fragment{
     }
     public void click(){
         mFirebase.collection("myAnimes").add(mAnime);
+        Toast.makeText(getContext(), "Added to my list..", Toast.LENGTH_SHORT).show();
     }
 
 }
